@@ -1,0 +1,205 @@
+/*列表页*/
+
+.body {
+    position: relative;
+    padding-bottom: 80px;
+    background-color: #f5f5f5;
+}
+
+.body .route {
+    font-size: 12px;
+    color: #333;
+    line-height: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.body .route a:hover {
+    text-decoration: underline;
+}
+.body .route .span {
+
+}
+.body .route .arrow-right {
+    display: inline-block;
+    margin: 0 5px;
+    width: 5px;
+    height: 11px;
+    color: #999;
+    /*font-size: 16px;*/
+}
+.body .route .list-name {
+    color: #999;
+}
+
+
+
+.body .carousel {
+    position: relative;
+    padding-bottom: 30px;
+    background: #f5f5f5;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+}
+
+.carousel img {
+    height: 310px;
+    width: 1090px;
+}
+.carousel .arrow-control {
+    display: none;
+    position: absolute;
+    width: 40px;
+    height: 60px;
+    top: 130px;
+    background-color: #303030;
+    background-image: url(../images/list/icon-normal-sd6f1ad0c32-b07308c8fc.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.carousel .swiper-button-next {
+    right: 10px;
+    background-position: 0 -4760px;
+}
+.carousel .swiper-button-prev {
+    left: 10px;
+    background-position: 0 -4580px;
+}
+.swiper-container:hover .arrow-control {
+    display: block;
+}
+.swiper-container .arrow-control:hover {
+    background-color: #b4a078;
+}
+.swiper-container .swiper-pagination {
+    bottom: 0;
+}
+.swiper-container .swiper-pagination-bullet {
+    margin: 0 8px 10px!important;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: 0;
+    background: #bfbbba;
+}
+.swiper-container .swiper-pagination-bullet-active {
+    width: 8px;
+    height: 8px;
+    background: 0 0;
+    border: 2px solid #b4a078;
+}
+
+
+.goods-area {
+    padding: 0 40px;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+}
+.goods-area .sort-bar {
+    margin-top: 10px;
+    border-bottom: 1px solid #eaeaea;
+    overflow: hidden;
+}
+.goods-area .sort-bar .category {
+    overflow: hidden;
+    line-height: 1;
+    padding-top: 20px;
+}
+.goods-area .sort-bar .name {
+    font-size: 14px;
+    color: #999;
+    float: left;
+    margin-right: 28px;
+}
+.goods-area .sort-bar .category-group {
+    overflow: hidden;
+    float: left;
+    margin-bottom: 4px;
+    width: 930px;
+}
+.goods-area .sort-bar .category-item {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+.goods-area .sort-bar .sorts .category-item {
+    margin-bottom: 0;
+}
+.goods-area .sort-bar .category-item:hover {
+    color: #b4a078;
+}
+.goods-area .sort-bar .category-item.active {
+    color: #b4a078;
+}
+.goods-area .sort-bar .area {
+    overflow: hidden;
+    border-top: 1px dashed #dedede;
+    line-height: 1;
+    padding-top: 20px;
+}
+.sort-bar .area .name {
+    margin-right: 0;
+}
+.goods-area .sort-bar .sorts {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+    line-height: 1;
+    border-top: 1px dashed #dedede;
+}
+.sort-bar .sorts .name {
+    font-size: 14px;
+    color: #999;
+    margin-right: 28px;
+}
+.sort-bar .sorts i {
+    margin-left: 10px;
+    color: #aaa;
+    font-size: 12px;
+}
+
+.goods-category {
+    padding-top: 30px;
+}
+.goods-category>.hd {
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+.goods-category>.hd .title {
+    margin-bottom: 10px;
+}
+.goods-category>.hd .icon {
+    margin-right: 10px;
+    height: 44px;
+    width: 44px;
+}
+.goods-category>.hd .name {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 44px;
+}
+.goods-category>.hd .desc {
+    font-size: 14px;
+    color: #999;
+    line-height: 1.5;
+}
+
+.item-list {
+    margin-top: 25px;
+    margin-right: -10px;
+}
+.item-list .item {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}

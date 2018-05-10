@@ -1,0 +1,510 @@
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+a, a:active, a:hover, a:visited {
+    text-decoration: none;
+}
+
+a {
+    color: #666;
+}
+.clearfix::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+body, textarea, input, button, select, keygen, legend {
+    font: 12px/1.14 "Microsoft YaHei","微软雅黑","宋体",helvetica,"Hiragino Sans GB";
+    color: #666;
+    outline: 0;
+}
+
+body {
+    font: 12px/1.14 "Microsoft YaHei", 微软雅黑, 宋体, helvetica, "Hiragino Sans GB";
+    background-color: #efefef;
+    color: rgb(102, 102, 102);
+    height: 1000px;
+}
+
+.header {
+    height: 130px;
+}
+.header .body-in {
+    width: 1000px;
+    margin: 0 auto;
+}
+.logo {
+    float: left;
+    width: 300px;
+    height: 60px;
+    margin-top: 35px;
+    background: url(../images/reg/sprite.png) no-repeat -50px -18px;
+}
+.go-login {
+    float: right;
+    font-size: 18px;
+    margin-top: 50px;
+}
+.go-login a {
+    text-decoration: none;
+    color: #ca5252;
+}
+
+.reg-container {
+    position: relative;
+    width: 1000px;
+    padding-bottom: 55px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 3px 3px #cbc9c9;
+}
+.tab {
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 44px;
+    padding-bottom: 24px;
+}
+.tab .left {
+    cursor: default;
+    width: 158px;
+    border: solid 1px #ccc;
+    border-right: 0;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 16px;
+    float: left;
+}
+.tab .select {
+    background: #ca5252;
+    border-color: #ca5252;
+    color: #fff;
+}
+.tab .right {
+    cursor: pointer;
+    display: block;
+    width: 158px;
+    border: solid 1px #ccc;
+    border-left: 0;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 16px;
+    float: right;
+    position: relative;
+}
+.tab .new {
+    position: absolute;
+    font-size: 9px;
+    color: #fff;
+    background: #ca5252;
+    height: 12px;
+    line-height: 9px;
+    width: 26px;
+    top: 4px;
+    border-radius: 2px;
+    right: 12px;
+}
+.opr {
+    height: 620px;
+    margin-top: 0;
+}
+.opr .u-input {
+    position: relative;
+    float: left;
+    height: 72px;
+    width: 100%;
+    overflow: hidden;
+}
+.opr .u-input.firstelem {
+    overflow: visible;
+    z-index: 12;
+}
+.opr .u-label {
+    float: left;
+    width: 340px;
+    text-align: right;
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 45px;
+    color: #333;
+}
+input {
+    width: 225px;
+    height: 30px;
+    padding-left: 0;
+    color: #333;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    outline: 0;
+}
+.opr .i-inpt {
+    float: left;
+    height: 44px;
+    width: 320px;
+    margin-top: 12px;
+    border: solid 1px #ddd;
+    font-size: 16px;
+    text-indent: 0.5em;
+}
+.opr .i-inpt.err {
+    border-color: #fa5b5b;
+}
+.opr .i-inpt:focus {
+    border-color: #4aafe9;
+}
+.opr .tip {
+    position: relative;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-left: -42px;
+    margin-top: 15px;
+    z-index: 11;
+    background: #fff;
+}
+.opr .clear {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+    background: url(../images/reg/sprite.png) no-repeat -325px -101px;
+}
+.opr .clear:hover {
+    opacity: 1;
+}
+.opr .popb {
+    float: left;
+    margin-left: 10px;
+    width: 280px;
+    height: 72px;
+    line-height: 72px;
+    overflow: hidden;
+    font-size: 12px;
+}
+.opr .popb.warn {
+    color: #999;
+}
+.opr .popb.err {
+    color: #fa5b5b;
+}
+.opr .popb i {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 22px;
+    height: 22px;
+    padding: 0 2px 0 0;
+    background: url(../images/reg/sprite.png) no-repeat;
+    background-position: 1000px 1000px;
+}
+.opr .popb.warn i {
+    background-position: -391px -99px;
+}
+.opr .popb.err i {
+    background-position: -62px -98px;
+}
+.opr .popb.success i {
+    margin-top: 24px;
+    background-position: -26px -98px;
+}
+.opr .popb span {
+    margin-left: 24px;
+}
+.animation {
+    animation: l-r 1s;
+}
+/* 提示文字动画效果 */
+@keyframes l-r {
+    0% {
+        transform: translateX(0px);
+    }
+    10% {
+        transform: translateX(-10px);
+    }
+    20% {
+        transform: translateX(10px);
+    }
+    30% {
+        transform: translateX(-10px);
+    }
+    40% {
+        transform: translateX(10px);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+    60% {
+        transform: translateX(10px);
+    }
+    70% {
+        transform: translateX(-10px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    90% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+.opr .i-inpt::placeholder {
+    color: #bbb;
+    font-weight: normal;
+}
+.opr .m-sug {
+    position: absolute;
+    z-index: 990;
+    top: 57px;
+    left: 340px;
+    width: 320px;
+    overflow: hidden;
+    border: solid 1px #ccc;
+    background-color: #f5f5f5;
+    font-size: 16px;
+}
+.opr .u-tip {
+    position: relative;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-left: -42px;
+    margin-top: 15px;
+    z-index: 11;
+    background: #fff;
+}
+.f-dn {
+    display: none !important;
+}
+.u-input .yanzheng {
+    float: left;
+    position: relative;
+    border: 1px solid #cbcbcb;
+    border-radius: 90px;
+    width: 320px;
+    height: 34px;
+    overflow: hidden;
+    color: #a8a8a8;
+    font-size: 12px;
+    text-align: center;
+    line-height: 34px;
+}
+.u-input .yanzheng-content {
+    float: left;
+    cursor: default;
+}
+.u-input .yanzhengPic {
+    width: 320px;
+    height: 100px;
+    bottom: 44px;
+    padding-bottom: 10px;
+    position: absolute;
+    display: none;
+    z-index: 1000;
+}
+.u-input .yanzhengPic img {
+    border-radius: 8px;
+    width: 320px;
+    height: auto;
+}
+.opr .u-note {
+    height: 22px;
+    line-height: 22px;
+    color: #999;
+}
+.u-note .changephone {
+    cursor: pointer;
+    color: #4cb5ff;
+}
+.opr .i-inpt.smsize {
+    width: 190px;
+}
+.opr .btn-getsms {
+    float: left;
+    height: 46px;
+    width: 120px;
+    font-size: 16px;
+    line-height: 46px;
+    margin: 12px 0 0 10px;
+    color: #fff;
+    background: #4ba7e0;
+    text-align: center;
+    cursor: pointer;
+}
+.opr .btn-getsms-btndisabled {
+    opacity: 0.6;
+    cursor: default;
+    background-color: #a1d1f6;
+}
+.opr .btn-reg {
+    float: left;
+    border: 0;
+    width: 322px;
+    height: 46px;
+    margin-top: 12px;
+    background-color: #ca5252;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    line-height: 46px;
+    cursor: pointer;
+}
+.opr .btn-reg.btndisabled {
+    opacity: 0.6;
+    cursor: default;
+}
+.opr .agree-tip {
+    margin-top: 10px;
+    color: #b1b1b1;
+    float: left;
+    width: 322px;
+    font-size: 12px;
+}
+.m-agree {
+    display: block;
+    float: left;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    border: solid 1px #aaa;
+    color: #999;
+    font-size: 12px;
+    background: url(../images/reg/sprite.png) -9999px -9999px no-repeat;
+}
+.m-agree-ok {
+    background-position: 0 -278px;
+}
+.u-agree {
+    cursor: pointer;
+    float: left;
+    width: 14px;
+    height: 14px;
+    line-height: 20px;
+    border: 1px solid #ccc;
+    background: #fff;
+    opacity: 0;
+}
+.opr .agree-tip a {
+    text-decoration: none;
+    color: #b1b1b1;
+    line-height: 20px;
+}
+.opr .agree-tip a:hover {
+    color: #666;
+}
+
+
+
+.m-cp {
+    padding: 30px 0;
+}
+.m-cp p, .m-cp p a {
+    color: #b1b1b1;
+}
+.m-cp p {
+    padding-bottom: 10px;
+    text-align: center;
+}
+.m-cp p a {
+    padding: 0 6px;
+}
+.m-cp p a:hover {
+    color: #ee8c18;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

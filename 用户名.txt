@@ -1,0 +1,6 @@
+注册页
+    已存在用户名:['handsomeBoy', 'zhangsan']
+    短信验证码:123456
+
+登录页
+    用户名密码:['zhangsan' => '123abc', 'handsomeBoy' => 'abcd1234', 'jack_zhang' => 'aabbcc123']
